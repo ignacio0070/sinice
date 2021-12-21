@@ -1,0 +1,12 @@
+.carrito{
+    width: 7%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+.contenedorCarrito{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
