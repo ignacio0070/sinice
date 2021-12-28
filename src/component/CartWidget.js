@@ -2,9 +2,9 @@ import React from 'react'
 import carrito from '../imagenes/carrito.jpg'
 function CartWidget() {
     return (
-        <div className='contenedorCarrito'>
+       <a href='../ItemCount.js'> <div className='contenedorCarrito'>
             <img className='carrito' src={carrito}/>
-        </div>
+        </div></a>
     )
 }
 
