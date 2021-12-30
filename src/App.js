@@ -5,6 +5,8 @@ import './component/Menu.css'
 import ItemListContainer from './component/ItemListContainer';
 import ItemCount from './component/ItemCount';
 import "./component/ItemCount.css";
+import "./component/ItemListContainer.css";
+import "./component/Item.css";
 
 function App() {
  
