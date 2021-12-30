@@ -26,6 +26,7 @@ function ItemListContainer({greeting}) {
                          <h2 className='titProducto'>  {prod.name} </h2>
                          <img className='bici' src={prod.foto} alt='' />
                          <Item/>
+                         <p> stock disponibles: {prod.stock} </p>
                     </div>   
                 </div>)}
                 
