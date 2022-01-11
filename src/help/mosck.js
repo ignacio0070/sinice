@@ -1,8 +1,8 @@
 import bici from '../imagenes/biciclaeta.jpg'
 const productos = [
-    {id:1  ,foto:bici ,name:"bicicleta orbea" ,precio:"30000$" ,stock:"10"},
-    {id:2  ,foto:bici ,name:"bicicleta orbea" ,precio:"30000$" ,stock:"5"},
-    {id:3  ,foto:bici ,name:"bicicleta orbea" ,precio:"30000$" ,stock:"17"}
+    {id:"1"  ,foto:bici ,name:"Bicicleta Orbea" ,precio:"30000$" ,stock:"10"},
+    {id:"2"  ,foto:bici ,name:"Bicicleta Orbea" ,precio:"30000$" ,stock:"5"},
+    {id:"3"  ,foto:bici ,name:"Bicicleta Orbea" ,precio:"30000$" ,stock:"17"}
 ]
 
 

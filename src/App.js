@@ -2,11 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import Menu from './component/Menu';
 import './component/Menu.css'
-import ItemListContainer from './component/ItemListContainer';
-import ItemCount from './component/ItemCount';
-import "./component/ItemCount.css";
-import "./component/ItemListContainer.css";
-import "./component/Item.css";
+import ItemListContainer from './component/ItemListConteiner/ItemListContainer';
+import "./component/ItemListConteiner/item/Item.css";
+import ItemDetailConteiner from './component/itemDetailConteiner/ItemDetailConteiner';
+import "./component/ItemCounst/ItemCount.css"
+
 
 function App() {
  
@@ -15,7 +15,8 @@ return(
   <div>
     < Menu/>
     <ItemListContainer greeting="saludos"/>
-   <ItemCount stock= {5}  inicio= {1}  />
+    <ItemDetailConteiner/>
+   
   </div>
  )
  

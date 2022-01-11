@@ -1,6 +1,7 @@
 import React from 'react'
-import CartWidget from './CartWidget'
-import '../component/CartWidget.css'
+import CartWidget from '../component/CartWidget'
+import  "./CartWidget.css";
+
 function Menu() {
     return (
         

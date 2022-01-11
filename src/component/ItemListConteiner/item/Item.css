@@ -32,3 +32,12 @@ width: 80%;
     
     
 }
+
+.detProducto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    border: solid 1px rgb(9, 0, 128);
+    border-radius: 10%  ;
+}
