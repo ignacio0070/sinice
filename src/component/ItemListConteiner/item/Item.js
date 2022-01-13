@@ -1,6 +1,5 @@
-
-
 import React from 'react'
+import { Link  } from 'react-router-dom'
 
 function Item({prod}) {
     return (
@@ -10,7 +9,9 @@ function Item({prod}) {
                          <h2 className='titProducto'>  {prod.name} </h2>
                          <img className='bici' src={prod.foto} alt='' />
                          <div>
+                             <Link to={`/detalle/${prod.id}`}>
                             <button className='detProducto' > <h3>Detalles del producto</h3></button>
+                            </Link>
                         </div>
                          <p> stock disponibles: {prod.stock} </p>
                     </div>   

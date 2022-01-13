@@ -6,13 +6,17 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #fff;
-    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6)
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    
 }
 .logo{
     color: #fff;
     font-size: 35px;
     padding: 0 40px;
     font-weight: bold;
+    text-decoration: none;
+   
 }
 .menu_items{
 display: flex;
