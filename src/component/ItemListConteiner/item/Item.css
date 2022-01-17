@@ -40,4 +40,9 @@ width: 80%;
     margin-top: 5px;
     border: solid 1px rgb(9, 0, 128);
     border-radius: 10%  ;
+    text-decoration: none;
+}
+.detProducto:hover{
+    background-color: rgba(180, 8, 202, 0.349);
+    transition: .4s;
 }

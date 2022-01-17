@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import carrito from '../imagenes/carrito.jpg'
 function CartWidget() {
     return (
-        <a href='../ItemCount.js'> 
+        <Link to='../ItemCount.js'> 
             <div className='contenedorCarrito'>
                 <img className='carrito' src={carrito}/>
             </div>
-        </a>
+        </Link>
     )
 }
 

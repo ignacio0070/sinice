@@ -14,13 +14,17 @@
     margin-left: 80%;
 }
 .agregar{
-  
-    
+    margin-bottom: 10px;
     border-radius: 20%;
     border-color: rgb(100, 58, 252);
-    padding: 1%;
-   margin-top: 6px;
+    padding: 10px;
+    margin-top: 6px;
+
    
+}
+.agregar:hover{
+    transition: .4;
+    background-color: rgba(3, 165, 97, 0.26);
 }
 .recuContador{
     display: flex;

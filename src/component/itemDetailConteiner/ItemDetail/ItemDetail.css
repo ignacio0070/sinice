@@ -20,4 +20,29 @@
     margin: 8px 0;
     padding: 0 30%;
 }
+.terCom{
+    border: solid 2px rgb(75, 44, 126);
+    border-radius: 10px;
+    padding: 7px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+}
+.terCom:hover{
+    background-color: rgba(1, 51, 143, 0.3);
+    transition: .4s;
+
+}
+.segCom{
+    border: solid 2px rgb(75, 44, 126);
+    border-radius: 10px;
+    padding: 7px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}  
+.segCom:hover{
+    background-color: rgba(1, 51, 143, 0.3);
+    transition: .4s
+}
 
