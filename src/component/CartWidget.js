@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import carrito from '../imagenes/carrito.jpg'
 function CartWidget() {
     return (
-        <Link to='../ItemCount.js'> 
+        <Link to='../cart'> 
             <div className='contenedorCarrito'>
                 <img className='carrito' src={carrito}/>
             </div>

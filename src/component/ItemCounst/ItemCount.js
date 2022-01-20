@@ -24,7 +24,7 @@ function ItemCount({stock ,inicio ,onAdd}) {
             {contador} 
             <button className='sumar' onClick={heandleIncrement}>+</button> <br/>
             </div>
-            <button className='agregar' onClick={()=>onAdd(contador)}>Agregar al carrito</button>
+            <button className='agregar' onClick={()=> onAdd(contador) }>Agregar al carrito</button>
             
         </div>
        
