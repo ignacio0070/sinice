@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { useCartContex } from "../../../context/cartContext"
 import ItemCount from "../../ItemCounst/ItemCount"
@@ -23,8 +23,25 @@ const [show,setShow] =useState(true)
         //sumarAlCarrito(...prudcuto ,contador , contador)
        
     }
+
+    
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+      setTimeout(()=>{
+          setLoading(false)
+
+      },1000);
+    
+      
+    }, []);
+    
     
     return (
+        <>
+        {loading ?
+            <h3>Loading...</h3> 
+            :
+
         <div className="conteiner">
         <div className="conteinerPrin">
             
@@ -33,7 +50,7 @@ const [show,setShow] =useState(true)
                 </div>
                         <img className="imgDet" src={producto.foto}/>
                 <div>
-                     <h2> {producto.precio} </h2>
+                     <h2>$ {producto.precio} </h2>
                 </div>
             <div> 
                {show ? <ItemCount stock={producto.stock} inicio={1} onAdd= {onAdd} /> :
@@ -46,6 +63,8 @@ const [show,setShow] =useState(true)
             
         </div>
         </div>
+         }
+         </>
     )
 }
 

@@ -30,7 +30,7 @@ function ItemListContainer({greeting}) {
     }, [idCategoria]) 
  console.log(productos)
     return (
-        <div>
+        <div className='fondoPro'>
             {greeting}
             { loading ? 
                 <h2>Cargando...</h2> 

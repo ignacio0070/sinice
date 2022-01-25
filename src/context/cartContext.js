@@ -11,23 +11,53 @@ export function useCartContex() {
 //creacion del componentee que maneja el contexto
 
 export const CartContextPorvider =({children})=>{
-    const [cartList, setCartList] = useState([])
+    const [cartList,setCartList] = useState([])
 
-    function argregarAlCarrito(items) {
-       const indice=cartList.findIndex(i => i.id === items.id)
-       if(indice > -1){
-           const qtyVieja=cartList[indice].cantida
-
-           let qtyNueva = qtyVieja +items.cantida
-           cartList[indice].cantida=qtyNueva
-           let arrAux=[...cartList]
-           setCartList(arrAux)
-       }else{
-           setCartList([...cartList, items])
-       }
+    const argregarAlCarrito = (items)=> {
+       
+        if (isOnCart(items.id)) {
+            
+            sumarCantidad (items)
+        } else {
+            setCartList([...cartList,items])
+        }
+       
+       
+    }
+    const   isOnCart=(id)=>{
+        const carrito = cartList.some((prod)=> prod.id===id)
+        return carrito
+    }
+    const sumarCantidad =(items)=>{
+        const copia = [...cartList]
+        copia.forEach((producto)=>{
+            producto.id === items.id && (producto.cantidad += items.cantidad)
+        })
+            
+       
+    }
+    const deleteItem = (id)=>{
+        const itemBorrado = cartList.filter ((producto)=>producto.id !== id)
+        setCartList(itemBorrado)
     }
     function vaciarCarrito() {
         setCartList([])
+        
+    }
+    function precioTotal() {
+        let count =0
+        cartList.forEach((productos)=>
+        count +=productos.precio * productos.cantidad
+        )
+        return count
+        
+    }
+    function cantProductos () {
+        let total =0
+        cartList.forEach((productos)=>
+        total+=productos.cantidad
+        )
+        return total
         
     }
     console.log(cartList)
@@ -36,7 +66,10 @@ export const CartContextPorvider =({children})=>{
         <cartContext.Provider value={{
             cartList,
             argregarAlCarrito,
-            vaciarCarrito
+            vaciarCarrito,
+            deleteItem,
+            precioTotal,
+            cantProductos
         }}>
             {children }
         </cartContext.Provider>

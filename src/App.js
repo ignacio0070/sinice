@@ -8,8 +8,8 @@ import ItemDetailConteiner from './component/itemDetailConteiner/ItemDetailConte
 import "./component/ItemCounst/ItemCount.css"
 import Cart from "./component/Cart/Cart";
 import { CartContextPorvider } from "./context/cartContext";
-
-
+import "./component/Cart/Cart.css"
+import"./component/ItemListConteiner/ItemListConteiner.css"
 
 
 
