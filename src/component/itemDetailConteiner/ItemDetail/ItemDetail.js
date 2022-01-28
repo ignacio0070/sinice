@@ -48,7 +48,7 @@ const [show,setShow] =useState(true)
                 <div className="nombrebici">
                     <h1> {producto.name}</h1>
                 </div>
-                        <img className="imgDet" src={producto.foto}/>
+                        <img className="imgDet" src={producto.imageUrl}/>
                 <div>
                      <h2>$ {producto.precio} </h2>
                 </div>

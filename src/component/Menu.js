@@ -6,7 +6,7 @@ function Menu() {
     return (
         
             <nav className='menu'>
-                 <label className='logo' >Trayquers</label>
+                 <label className='logo' >Treyquers</label>
                 <ul className='menu_items'>
                     <li><Link to="/">Inicio</Link></li>
                     <li> <Link to="/categoria/repuestos">Repuestos</Link></li>
