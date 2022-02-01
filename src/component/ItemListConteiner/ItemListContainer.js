@@ -1,7 +1,6 @@
 import React from 'react'
 import{ useState,useEffect} from 'react'
 import { useParams } from 'react-router-dom'
-import { getFetch } from '../../help/mosck'
 import ItemList from './ItemList/ItemList'
 import {collection, getDoc, getDocs, getFirestore, query, where} from "firebase/firestore"
 
@@ -30,20 +29,7 @@ function ItemListContainer({greeting}) {
         .catch(err =>err)
         .finally(()=> setLoading(false))
         }
-        //  if(idCategoria) {
-        //     getFetch
-        //      .then(resp => setProductos(resp.filter(prod=>prod.categoria=== idCategoria)))
-        //      .catch(err=> console.log(err))
-        //       .finally(()=> setLoading(false))
 
-        //  } else{
-        //     getFetch
-        //      .then(resp => setProductos(resp))
-        //.catch(err=> console.log(err))
-        // .finally(()=> setLoading(false))
-        
-        
-        //}
     }, [idCategoria]) 
  console.log(productos)
     return (
