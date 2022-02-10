@@ -5,18 +5,19 @@ import {Link, NavLink} from "react-router-dom"
 function Menu() {
     return (
         
-            <nav className='menu'>
-                 <label className='logo' >Treyquers</label>
+      <nav className='menu'>
+            <label className='logo' >Treyckers</label>
                 <ul className='menu_items'>
-                    <li><Link to="/">Inicio</Link></li>
-                    <li> <Link to="/categoria/repuestos">Repuestos</Link></li>
-                    <li> <Link to="/categoria/bici">Bicicletas</Link></li>
-               
+                  <li><Link to="/">Inicio</Link></li>
+                  <li> <Link to="/categoria/repuestos">Repuestos</Link></li>
+                  <li> <Link to="/categoria/bici">Bicicletas</Link></li>
+  
                 </ul>
-                <Link to="/cart">
+            <Link to="/cart">
               <CartWidget/>
-              </Link>
-            </nav>
+            </Link>
+          
+      </nav>
       
             
       

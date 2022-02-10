@@ -13,7 +13,6 @@ function ItemListContainer({greeting}) {
 
     useEffect(() => {
         if (idCategoria) {
-            
         const db =getFirestore()
         const queryCollection= query( collection ( db, 'items'),where("categoria","==",idCategoria)  )
         getDocs(queryCollection)
@@ -33,14 +32,32 @@ function ItemListContainer({greeting}) {
     }, [idCategoria]) 
  console.log(productos)
     return (
+        <div >
         <div className='fondoPro'>
-            {greeting}
+            <div className='titulo'>
+            <h1>{greeting}</h1>
+            </div>
             { loading ? 
                 <h2>Cargando...</h2> 
                      :
                       <ItemList productos={productos} />
+                     
           }
+          
                 
+        </div>
+        
+        <div className='redes'>
+            <div>
+            <h3 className='tituloR'>Informacion</h3>
+            <p>Instagram: treyckers</p>
+            <p>Meil: treyckers@hotmail.com</p>
+            <p>Faceboock: treyckerss</p>
+            </div>
+            <div className='pepe'> Bicicletas: Se conoce como bicicleta al medio de transporte que tiene dos ruedas,
+             con pedales que permiten transmitir el movimiento a la rueda trasera a través de una cadena,
+              un piñón y un plato.Se trata de un vehículo que se desplaza por la propulsión del propio usuario, quien debe pedalear.</div>
+        </div>
         </div>
     )
 }

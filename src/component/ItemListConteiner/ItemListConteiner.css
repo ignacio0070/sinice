@@ -1,0 +1,36 @@
+
+.fondoPro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 5%;
+    
+}
+.titulo{
+    display: block;
+   margin-left: 39%;
+    position: absolute;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.199);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px;
+    
+}
+.pepe{
+  
+    position: absolute;
+    margin-left: 28%;
+    margin-top: 5%;
+    width: 60%;
+    
+}
+.tituloR{
+    margin-bottom: 3%;
+   
+    margin-top: 0%;
+}
