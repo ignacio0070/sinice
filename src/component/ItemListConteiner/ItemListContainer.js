@@ -2,7 +2,7 @@ import React from 'react'
 import{ useState,useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import ItemList from './ItemList/ItemList'
-import {collection, getDoc, getDocs, getFirestore, query, where} from "firebase/firestore"
+import {collection, getDocs, getFirestore, query, where} from "firebase/firestore"
 
 
 function ItemListContainer({greeting}) {
@@ -30,7 +30,7 @@ function ItemListContainer({greeting}) {
         }
 
     }, [idCategoria]) 
- console.log(productos)
+
     return (
         <div >
         <div className='fondoPro'>
@@ -49,14 +49,16 @@ function ItemListContainer({greeting}) {
         
         <div className='redes'>
             <div>
-            <h3 className='tituloR'>Informacion</h3>
-            <p>Instagram: treyckers</p>
-            <p>Meil: treyckers@hotmail.com</p>
-            <p>Faceboock: treyckerss</p>
+                <h3 className='tituloR'>Informacion</h3>
+                <p>Instagram: treyckers</p>
+                <p>Meil: treyckers@hotmail.com</p>
+                <p>Faceboock: treyckerss</p>
             </div>
-            <div className='pepe'> Bicicletas: Se conoce como bicicleta al medio de transporte que tiene dos ruedas,
-             con pedales que permiten transmitir el movimiento a la rueda trasera a través de una cadena,
-              un piñón y un plato.Se trata de un vehículo que se desplaza por la propulsión del propio usuario, quien debe pedalear.</div>
+            <div className='pepe'> 
+                Bicicletas: Se conoce como bicicleta al medio de transporte que tiene dos ruedas,
+                con pedales que permiten transmitir el movimiento a la rueda trasera a través de una cadena,
+                un piñón y un plato.Se trata de un vehículo que se desplaza por la propulsión del propio usuario, quien debe pedalear.
+            </div>
         </div>
         </div>
     )

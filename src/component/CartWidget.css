@@ -1,13 +1,20 @@
 .carrito{
-    width: 7%;
+    width: 45%;
     display: flex;
     justify-content: end;
     align-items: center;
+
     
 }
 .contenedorCarrito{
     display: flex;
-    justify-content: end;
-    margin-right: 20px;
-    
+    align-items: center;
+   
+    margin-right: 9%;
+    margin-left: 74%;
+}
+.cantProd{
+    color: white;
+    text-decoration: none;
+    margin-left: 10% ;
 }

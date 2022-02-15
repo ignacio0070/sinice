@@ -16,7 +16,7 @@ const ItemDetailConteiner = () => {
       
         
     }, []) 
-    console.log(producto)
+    
     return (
         <div>
             <ItemDetail producto= {producto} />

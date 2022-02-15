@@ -60,7 +60,7 @@ export const CartContextPorvider =({children})=>{
         return total
         
     }
-    console.log(cartList)
+    
 
     return(
         <cartContext.Provider value={{
