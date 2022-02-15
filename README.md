@@ -69,4 +69,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-para una vez iniciado el proyecto inicie a http://localhost:3000 para poder navegar
+para una vez iniciado el proyecto ingrece a http://localhost:3000 para poder navegar
+
+### `npm install`
+
+una vez instalado se deve d
+
+### `npm start`
+Para este proyecto se utilizaron las siguientes dependencias:
+ 
+ * React Router (para dale el enrutado de mi sitio)
+ 
